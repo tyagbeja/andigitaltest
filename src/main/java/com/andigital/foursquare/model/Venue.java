@@ -1,5 +1,7 @@
 package com.andigital.foursquare.model;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Venue {
 	private String name;
 	private Location location;

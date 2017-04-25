@@ -1,7 +1,9 @@
 package com.andigital.foursquare.model;
 
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Response {
 	List<Group> groups;
 	public Response() {
